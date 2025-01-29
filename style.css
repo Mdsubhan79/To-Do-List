@@ -37,11 +37,16 @@
 .row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    overflow: hidden;
     background: #edeef0;
     border-radius: 30px;
-    padding-left: 20px;
+    padding: 5px;
     margin-bottom: 25px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    gap: 5px;
 }
 
 .line {
@@ -55,17 +60,27 @@ input {
     background: transparent;
     padding: 10px;
     font-weight: 16px;
+    min-width: 0;
 }
+
 
 button {
     border: none;
     outline: none;
-    padding: 16px 50px;
     background: #76a100;
     color: #fff;
     font-size: 17px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 30px;
+    padding: 12px 20px;
+
+    
+    white-space: nowrap;
+    min-width: 80px;
+    max-width: 100px;
+    flex-shrink: 0;
+
+
 }
 
 button:hover {
